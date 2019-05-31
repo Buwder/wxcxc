@@ -1,0 +1,50 @@
+/* pages/report/report.wxss */
+page{
+  font-size: 30rpx;
+  color: #333;
+  background: #fff;
+}
+.content{
+  width: 96%;
+  margin: 0 2%;
+}
+.report_detail{
+  display: block;
+  line-height: 55rpx;
+}
+.appraise{
+  width: 50%;
+  display:inline-block;
+  overflow: hidden;
+  line-height: 30rpx
+}
+.content-title{
+  color:#006dbc;
+  display: block;
+  border-bottom: 1px solid  #96cde8;
+  line-height: 60rpx;
+}
+.report-content{
+  border: 1px solid #eee;
+  padding: 2%;
+  margin: 15rpx 0;
+}
+.titles{
+  font-weight: bold;
+  border: none
+}
+.WxEmojiView {
+  line-height: 60rpx;
+  margin: 10rpx auto;
+  display:inline-block
+}
+.userinfo text{
+  display: inline-block;
+  width: 50%;
+  overflow: hidden;
+  line-height: 60rpx
+}
+canvas{
+  height: 400rpx;
+  width: 100%;
+}

@@ -1,0 +1,117 @@
+<view class="container more">
+  <view class="user flex-wrp">
+    <view class="avatar flex-item">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <view class="user-info flex-item">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="edit">{{userInfo.country}}{{userInfo.city}}</text>
+    </view>
+  </view>
+  <loading hidden="{{hidden}}">
+      加载中...
+  </loading>
+     <view class="my">
+     <form bindsubmit="formSubmit">
+    <view class="my-item clearfloat ">
+      <view class="myitem-name flex-item">
+        <text>账户:</text>
+      </view>
+      <view>
+        <input type='text' name='loginname' value='{{userinfo.login_name}}' disabled='true'></input>
+      </view>
+    </view>
+    <view class="my-item clearfloat">
+      <view class="myitem-name flex-item">
+        <text>姓名:</text>
+      </view>
+      <view>
+        <input type='text' name='username' value='{{userinfo.user_name}}'></input>
+      </view>
+    </view>
+    <view class="my-item clearfloat">
+      <view class="myitem-name flex-item">
+        <text>性别:</text>
+      </view>
+      <view>
+      <view class="section">
+        <picker bindchange="bindCasPickerChangesex" value="{{casIndex}}" range="{{casArray}}">
+          <view>
+            <input type='text' name='{{usersex}}'  disabled  style='display:{{sexshow}}' value='{{casArray[casIndex]}}'></input>
+            <input type='text' name='{{usersexs}}'  disabled  style='display:{{sexhide}}' value='{{userinfo.EnumSex[userinfo.sex].title}}'></input>
+            <text class='under'>▼</text>
+          </view>
+        </picker> 
+      </view>
+      </view>
+    </view>
+    <view class="my-item clearfloat">
+      <view class="myitem-name flex-item">
+        <text>年龄:</text>
+      </view>
+      <view>
+        <input name='userage' maxlength='3' type='number' value='{{userinfo.age}}'></input>
+      </view>
+    </view>
+    <view class="my-item clearfloat">
+      <view class="myitem-name flex-item">
+        <text>婚姻状况:</text>
+      </view>
+      <view>
+      <view class="section">
+        <picker bindchange="bindCasPickerChangeEnumMarriage" value="{{EnumMarriageindex}}" range="{{EnumMarriageArray}}">
+          <view>
+           <input type='text' name='{{usermarriage}}' disabled  style='display:{{marriageshow}}' value='{{EnumMarriageArray[EnumMarriageindex]}}'></input>
+            <input type='text' disabled name='{{usermarriages}}'  style='display:{{marriagehide}}' value='{{userinfo.EnumMarriage[userinfo.marriage].title}}'></input>
+            <text class='under'>▼</text>
+          </view>
+        </picker>
+      </view>
+      </view>
+    </view>
+    <view class="my-item clearfloat">
+      <view class="myitem-name flex-item">
+        <text>学历:</text>
+      </view>
+      <view>
+      <view class="section">
+        <picker bindchange="bindCasPickerChangeEnumEducationType" value="{{EnumEducationTypeindex}}" range="{{EnumEducationType}}">
+          <view>
+          <input type='text' name='{{userEducation}}' disabled  style='display:{{educationshow}}' value='{{EnumEducationType[EnumEducationTypeindex]}}'></input>
+            <input type='text'  name='{{userEducations}}' disabled  style='display:{{educationhide}}' value='{{userinfo.EnumEducationType[userinfo.education_type].title}}'></input>
+            <text class='under'>▼</text>
+          </view>
+        </picker>
+      </view>
+      </view>
+    </view>
+      <view class="my-item clearfloat">
+      <view class="myitem-name flex-item">
+        <text>薪资水平:</text>
+      </view>
+      <view>
+      <view class="section">
+        <picker bindchange="bindCasPickerChangeEnumIncome" value="{{EnumIncomeindex}}" range="{{EnumIncome}}">
+          <view>
+            <input type='text' disabled  name='{{userEnumIncome}}' style='display:{{incomeshow}}' value='{{EnumIncome[EnumIncomeindex]}}'></input>
+            <input type='text' disabled  name='{{userEnumIncomes}}' style='display:{{incomehide}}' value='{{userinfo.EnumIncome[userinfo.income].title}}'></input>
+            <text class='under'>▼</text>
+          </view>
+        </picker>
+      </view>
+      </view>
+    </view>
+    <view class="my-item clearfloat">
+      <view class="myitem-name flex-item">
+        <text>手机号:</text>
+      </view>
+      <view>
+        <input maxlength="11" name='usernumber' type='number' value='{{userinfo.phone_number}}' placeholder='手机号码'></input>
+      </view>
+    </view>
+    <view  class="my-item">
+      <button type='parimy' form-type='submit'>确定</button>
+    </view>
+    </form> 
+  </view>
+</view>

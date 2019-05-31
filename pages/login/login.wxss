@@ -1,0 +1,38 @@
+/* pages/login/login.wxss */
+.login{
+  background: #0088cc;
+  width: 100%;
+  height: 100rpx;
+}
+.login image{
+  width:360rpx;
+  height: 70rpx;
+  margin: 15rpx
+}
+.login-content{
+  width: 96%;
+  margin: 20rpx 2%
+}
+.section input{
+  border: 1px solid #e7e7e7;
+  margin: 30rpx auto;
+  font-size: 30rpx;
+  line-height: 92rpx;
+  height: 92rpx;
+  padding: 0 20rpx;
+  border-radius: 5px;
+}
+.section button{
+  background: #0088cc;
+  color: #fff;
+  margin-top: 50rpx;
+}
+.ad_popError{ 
+  background: #de352d;
+  color: #fff;
+  height: 58rpx;
+  line-height: 58rpx;
+  font-size: 24rpx;
+  text-align: center;
+  visibility: hidden
+  }

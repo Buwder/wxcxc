@@ -1,0 +1,22 @@
+<view class='pem_content'>
+  <view class='test-title'>
+    <text><text class='red-title'>你共有{{infolist.data.length}}个测试项</text></text>
+  </view>
+  <view class='test_list'>
+     <scroll-view  scroll-y lower-threshold>
+        <view wx:for="{{infolist.data}}" wx:key="{{index}}" class='test_lists clearfloat'>
+          <view class='lbimg'>
+            <image src='http://img.pems.cn/question/files/{{infolist.data[index].question_id}}/cover.jpg'></image>
+          </view>
+           <view class='lbcontent clearfloat'>
+              <text>{{infolist.data[index].title}}</text>
+              <text>{{infolist.data[index].description}}</text>
+              
+              <button wx:if="{{infolist.data[index].test_status == 'INIT'}}" data-id="{{infolist.data[index].id}}" class='bth' bindtap='begintest' size="40">开始答题</button> 
+              <button wx:if="{{infolist.data[index].test_status == 'TESTED' || infolist.data[index].test_status == 'REPORTED' && infolist.data[index].visible == 'N'}}" type='primary' size="40" >正在审核</button>
+              <button wx:if="{{infolist.data[index].test_status == 'REPORTED' && infolist.data[index].visible == 'Y'}}" type='primary' bindtap='begintestreport' size="40" data-id="{{infolist.data[index].id}}">查看报告</button>
+           </view>
+        </view>
+     </scroll-view>  
+  </view>
+</view>

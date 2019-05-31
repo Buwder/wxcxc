@@ -1,0 +1,14 @@
+<view class="section">
+<view bindtap="backindex" style='display:none'>返回上一层</view>
+  <scroll-view scroll-y>
+    <view class='ganyulist' wx:for="{{ganyulistarray}}" wx:key="{{index}}" class='ganyulist-item' >
+    <view data-id="{{ganyulistarray[index].id}}"  bindtap='ganyulinks'>
+     <image style="width: 98px; height: 98px;box-shadow:4px 4px 7px #787878;" mode="scaleToFill" src="http://img.pems.cn/{{ganyulistarray[index].image_path}}"></image>
+       <text>{{ganyulistarray[index].package_name}}</text>
+    </view>
+    </view>
+  </scroll-view>
+   <!-- <view class='copyright'>
+     <text>版权所有： 中盛凯新  2009-2018</text>
+  </view> -->
+</view>

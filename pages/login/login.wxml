@@ -1,0 +1,24 @@
+<view>
+   <view class='login'>
+      <image src='http://img.pems.cn/testcenter_logo/59/ml_59.png'></image>
+   </view>
+   <view class="ad_popError" style='visibility:{{shows}}'>
+      {{popErrorMsg}}
+    </view> 
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+   <form bindsubmit="formSubmit">
+   <view class='login-content'>
+          <view class="section">
+    <input name='user' value='' placeholder="请输入用户名" />
+  </view>
+       <view class="section">
+        <input name='password' value='' password type="number" placeholder='请输入密码' />
+      </view>
+      <view class='section'>
+       <button formType="submit">登陆</button>
+      </view>
+   </view>
+    </form>
+</view>

@@ -1,0 +1,32 @@
+<!--appindex.wxml-->
+<view>
+   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+   <block wx:for="{{movies}}" wx:for-index="index" wx:key="{{index}}">  
+    <swiper-item>  
+     <image src="{{item.url}}" class="slide-image" mode="aspectFill" style='width:100%'/>  
+    </swiper-item>  
+   </block>  
+  </swiper>
+</view>  
+<view class='indexcontent clearfloat'>
+  <view class='x-pinggu xinli' bindtap='begintests'>
+        <image style="width: 70px; height: 70px;" mode="scaleToFill" src="http://img.pems.cn/app/mobile/images/psy_text.png"></image>
+         <text>心身评估</text>
+  </view>
+  <view class='x-ganyu xinli' bindtap='ganyulist'>
+       <image style="width: 70px; height: 70px;" mode="scaleToFill" src="http://img.pems.cn/app/mobile/images/psy_intervetion.png"></image>
+       <text >心理干预</text>
+  </view>
+   <view class='x-mingxiang xinli' bindtap='meditation'>
+        <image style="width: 70px; height: 70px;" mode="scaleToFill" src="../../images/psy_text.png"></image>
+         <text>冥想训练</text>
+  </view>
+  <view class='other xinli'>
+       <image style="width: 70px; height: 70px;" mode="scaleToFill" src="../../images/psy_text2.png"></image>
+       <text >更多功能</text>
+  </view>
+  <view class='copyright'>
+     <text>版权所有： 中盛凯新  2009-2018</text>
+  </view>
+</view>
+  

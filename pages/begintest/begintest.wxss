@@ -1,0 +1,69 @@
+/* pages/begintest/begintest.wxss */
+.test-title{
+  font-size: 26rpx;
+  color: #222;
+  width: 96%;
+  padding: 15rpx 0;
+  border-bottom: 1px solid #f0f0f0;
+  margin:  0 auto
+}
+.red-title{
+  color: #ff5a00;
+  font-weight: bold
+}
+.test_lists{
+  background: #f6f6f6;
+  width: 96%;
+  margin: 25rpx 2%;
+  padding: 0 0 25rpx;
+  border-bottom: 1px solid #eee;
+  box-shadow:2px 2px 4px #ddd;
+}
+.test_lists view{
+  float: left
+}
+.lbimg{
+  width: 190rpx;
+  height: 190rpx;
+  box-shadow:2px 2px 4px #787878;
+}
+.lbimg image{
+  width: 100%;
+  height: 100%;
+}
+.lbcontent{
+  width: 69%;
+  font-size: 28rpx;
+  margin-left:3% 
+}
+.lbcontent text:first-child{
+  font-weight: bold;
+  color: #222
+}
+.lbcontent text{
+  width:100%;
+  display: block;
+  color: #555;
+  font-size: 26rpx;
+  line-height: 50rpx;
+   display: -webkit-box;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+}
+.bth{
+  background: #019ae7;
+  color:#fff;
+}
+.lbcontent button{
+  width: 200rpx;
+  height: 50rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  float: left;
+  margin:8rpx;
+  box-shadow:2px 2px 4px #787878;
+}

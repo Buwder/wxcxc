@@ -1,0 +1,2 @@
+<!--pages/webreport/webreport.wxml-->
+<web-view src="https://xcx.pems.cn/test/user/testbegin?itemid={{itemid}}"></web-view>

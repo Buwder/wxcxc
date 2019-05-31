@@ -1,0 +1,48 @@
+/**index.wxss**/
+.swiper {
+ height: 300rpx;
+ width: 100%;
+}
+.swiper image {
+ height: 100%;
+ width: 100%;
+}
+.xinli{
+  text-align: center;
+  color: #fff;
+  border-radius: 0.5em;
+  padding: 1.3em 0;
+  margin: 5% 2.5% 0 2.5%;
+  float: left;
+  width:45%;
+}
+.xinli image{
+  display: block;
+  margin: 0 auto
+}
+.x-pinggu{
+  background: #3d9dff;
+}
+.x-ganyu{
+  background: #77c833;
+}
+.x-mingxiang{
+  background: #feb33c;
+}
+.other{
+  background: #2ecca4
+}
+.indexcontent{
+  width: 100%;
+  height: 100%
+}
+.clearfloat:after{
+  display:block;
+  clear:both;
+  content:"";
+  visibility:hidden;
+  height:0
+  } 
+.clearfloat{
+  zoom:1
+}

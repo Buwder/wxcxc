@@ -1,0 +1,13 @@
+<view class='videoplay'>
+   <view class='top-viedo'>
+      
+   <audio style="" name="{{music.name}}" author="{{music.cate}}" controls loop poster="http://img.pems.cn/{{music.img}}" src='http://img.pems.cn/{{music.path}}'>
+   </audio>
+   <text class="desc">
+      {{music.name}}:{{music.desc}}
+    </text>
+   </view>  
+    <!-- <view class='copyright'>
+     <text>版权所有： 中盛凯新  2009-2018</text>
+  </view> -->
+</view>

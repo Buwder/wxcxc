@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/appindex/appindex",
+    "pages/ganyu/ganyu",
+    "pages/intervention/intervention",
+    "pages/videoplay/videoplay",
+    "pages/begintest/begintest",
+    "pages/more/more",
+    "pages/report/report",
+    "pages/index/index",
+    "pages/musicplay/musicplay",
+    "pages/webreport/webreport",
+    "pages/testbegin/testbegin"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0088cc",
+    "navigationBarTitleText": "PEM心理健康管理",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/appindex/appindex",
+        "text": "心身评估"
+      },
+      {
+        "pagePath": "pages/ganyu/ganyu",
+        "text": "心理干预"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "我的信息"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,19 @@
+/* pages/ganyu/ganyu.wxss */
+.ganyulist-item{
+  float:left;
+  display:inline-block;
+  width:45%;
+  margin:0 2.5% 0 2.5%;
+  padding-bottom:10px; 
+  text-align: center;
+}
+.ganyulist-item view{
+  width: 100%;
+  height: 100%;
+  padding-top: 0.8em;
+  border-radius: .4em
+}
+.ganyulist-item text{
+  font-size: 14px;
+  display: block
+}

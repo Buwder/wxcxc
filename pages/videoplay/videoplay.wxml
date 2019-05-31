@@ -1,0 +1,16 @@
+<view class='videoplay'>
+   <view class='top-viedo'>
+      
+   <video style='width:100%;height:500rpx' poster="http://img.pems.cn/{{video.img}}" src='http://img.pems.cn/{{video.path}}'>
+   </video>
+   <text class="video-name">
+      {{video.name}}
+   </text>
+   <text class="desc">
+      {{video.desc}}
+    </text>
+   </view>  
+    <!-- <view class='copyright'>
+     <text>版权所有： 中盛凯新  2009-2018</text>
+  </view> -->
+</view>

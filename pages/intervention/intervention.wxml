@@ -1,0 +1,56 @@
+<view class='content'>
+<view  class='top-tab flex-wrp flex-tab'>
+  <view class="{{selected?'white':''}}" bindtap='selected'>
+    <text>减压系列</text>
+  </view>
+  <view class="{{selected1?'white':''}}"  bindtap='selected1'>
+    <text>音乐治疗</text>
+  </view>
+  <view class="{{selected2?'white':''}}"  bindtap='selected2'>
+    <text>心理训练</text>
+  </view>
+    </view>
+    <view class='tabcontent'>
+      <view class="musiclister clearfloat {{selected?'show':'hidden'}} " wx:for="{{listvideo}}" data-id="{{listvideo[index].id}}" data-desc="{{listvideo[index].description}}" data-name="{{listvideo[index].resource_name}}" data-path="{{listvideo[index].resource_path}}" wx:key="{{index}}" bindtap='videoplay' data-img = "{{listvideo[index].catalog_image}}">
+      <view class='ganyulist-item '> 
+         <image src="http://img.pems.cn/{{listvideo[index].cover_image_path}}"></image>
+        <text>{{listvideo[index].resource_name}}</text>
+      </view>
+      </view>
+      </view>
+      <view>
+        <view class="{{selected1?'show':'hidden'}}">
+          <view>
+            <!-- <audio  src="{{src}}" id="myAudio" ></audio>
+            <scroll>
+                <view wx:for="{{musiclist}}" wx:key="{{index}}" data-name="{{musiclist[index].resource_name}}" data-cate="{{musiclist[index].catalog_name}}" class="musics" bindtap='playmusic' data-id="{{index}}">
+                <image src='http://img.pemcloud.cn/app/mobile/images/music_play_green.png'></image>
+                  <text>{{musiclist[index].resource_name}}</text>
+                  <text>{{musiclist[index].catalog_name}}</text>
+                </view> 
+            </scroll> -->
+            <view class="musiclister clearfloat" wx:for="{{musiclist}}" data-id="{{musiclist[index].id}}" data-desc="{{musiclist[index].description}}" data-cate="{{musiclist[index].catalog_name}}" data-name="{{musiclist[index].resource_name}}" data-path="{{musiclist[index].resource_path}}" wx:key="{{index}}" bindtap='musicplay' data-img = "{{musiclist[index].catalog_image}}">
+            <view class='ganyulist-item '> 
+              <image src="http://img.pems.cn/{{musiclist[index].catalog_image}}"></image>
+              <text>{{musiclist[index].resource_name}}</text>
+            </view>
+            </view>
+          </view>
+        <!-- <view>
+          <text>{{name}}{{cate}}</text>
+        </view>
+        <view class='musiclistbtn'>
+          <button  bindtap="audioPlay">播放</button>
+          <button  bindtap="audioPause">暂停</button>
+        </view> -->
+      </view>
+      </view>
+      <view  class='tabcontent clearfloat'>
+      <view class="musiclister clearfloat {{selected2?'show':'hidden'}}" wx:for="{{testdatas}}"  wx:key="{{index}}">
+       <view bindtap='videoplay' class='ganyulist-item ' data-id="{{testdatas[index].id}}" data-desc="{{testdatas[index].description}}" data-name="{{testdatas[index].resource_name}}" data-path="{{testdatas[index].resource_path}}" data-img = "{{testdatas[index].catalog_image}}"> 
+         <image src="http://img.pems.cn/{{testdatas[index].cover_image_path}}" ></image>
+        <text>{{testdatas[index].resource_name}}</text>
+      </view>
+      </view>
+      </view>
+</view>

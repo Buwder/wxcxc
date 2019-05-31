@@ -1,0 +1,56 @@
+/* pages/videoplay/videoplay.wxss */
+page{
+    background: #fff
+  }
+  .videoplay{
+    width: 100%;
+  }
+  .videoplay text {
+    font-size: 28rpx;
+    color: #333;
+    display: block;
+    line-height: 20rpx
+    }
+    .about-video{ 
+      width: 96%;
+      margin: 0 auto
+    }
+    .first-video,.last-video{
+      width: 100%;
+      background: #fff;
+      margin: 30rpx 0;
+      height: 210rpx
+    }
+     .first-video image,.last-video image{
+      width: 180rpx;
+      height: 180rpx;
+      margin: 15rpx;
+    }
+     .first-video text,.last-video text{
+      display: inline-block;
+      line-height: 180rpx;
+      vertical-align: top;
+      margin-left: 10rpx
+    }
+      .top-viedo  video{
+        margin: 0;
+        object-fit: fill
+      }
+    .top-viedo text{
+      width: 96%;
+      margin: 0 auto;
+      border-bottom: 1px dashed #ddd;
+      padding-bottom: 20rpx
+    }
+    .desc{
+      display: block;
+      text-indent: 2em;
+      line-height: 50rpx!important;
+      padding-bottom: 100rpx!important;
+    }
+    audio{
+      text-align: center;
+      display: block;
+      margin: 30rpx auto;
+      width: 100%
+    }
